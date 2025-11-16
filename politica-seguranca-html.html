@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Segurança - FaciliteOnline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --verde-principal: #00C853;
+            --verde-escuro: #00A843;
+            --branco: #FFFFFF;
+            --cinza-claro: #F5F5F5;
+            --cinza-texto: #424242;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.8;
+            color: var(--cinza-texto);
+            background: var(--cinza-claro);
+        }
+
+        nav {
+            background: var(--branco);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--verde-principal);
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--verde-principal);
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .document {
+            background: var(--branco);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            color: var(--verde-principal);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .last-update {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        h2 {
+            color: var(--verde-escuro);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--verde-principal);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: var(--cinza-texto);
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--verde-escuro);
+        }
+
+        .security-badge {
+            background: var(--verde-principal);
+            color: var(--branco);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .security-badge h3 {
+            color: var(--branco);
+            margin: 0;
+        }
+
+        .alert-box {
+            background: #FFE5E5;
+            border-left: 4px solid #FF5252;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .contact-box {
+            background: var(--cinza-claro);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--verde-principal);
+            margin: 2rem 0;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .security-item {
+            background: var(--cinza-claro);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid var(--verde-principal);
+        }
+
+        .security-item h4 {
+            color: var(--verde-principal);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: var(--branco);
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .document {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .security-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">💸 FaciliteOnline</a>
+            <a href="index.html" class="back-link">← Voltar ao Site</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="document">
+            <h1>Política de Segurança</h1>
+            <p class="last-update">Última atualização: 15 de novembro de 2025</p>
+
+            <div class="security-badge">
+                <h3>🔒 Seu dinheiro e seus dados estão protegidos</h3>
+                <p style="margin: 0.5rem 0 0 0;">Utilizamos as mais avançadas tecnologias de segurança bancária</p>
+            </div>
+
+            <h2>1. Compromisso com a Segurança</h2>
+            <p>A <strong>FaciliteOnline</strong> (CNPJ 55.130.600/0001-66) tem como prioridade máxima a segurança das informações e transações de seus usuários. Esta política descreve as medidas implementadas para proteger seus dados e garantir a integridade do serviço.</p>
+
+            <h2>2. Segurança de Dados</h2>
+            
+            <h3>2.1 Criptografia</h3>
+            <div class="security-grid">
+                <div class="security-item">
+                    <h4>TLS 1.3</h4>
+                    <p>Comunicações criptografadas entre você e nossos servidores</p>
+                </div>
+                <div class="security-item">
+                    <h4>AES-256</h4>
+                    <p>Dados sensíveis armazenados com criptografia militar</p>
+                </div>
+                <div class="security-item">
+                    <h4>Tokens JWT</h4>
+                    <p>Autenticação segura com renovação automática</p>
+                </div>
+                <div class="security-item">
+                    <h4>Hash bcrypt</h4>
+                    <p>Senhas protegidas com algoritmo de última geração</p>
+                </div>
+            </div>
+
+            <h3>2.2 Armazenamento Seguro</h3>
+            <ul>
+                <li>Servidores em data centers certificados (ISO 27001)</li>
+                <li>Backup diário automatizado com criptografia</li>
+                <li>Backup geograficamente distribuído</li>
+                <li>Retenção de backup por 90 dias</li>
+                <li>Testes de recuperação mensais</li>
+            </ul>
+
+            <h3>2.3 Segregação de Dados</h3>
+            <ul>
+                <li>Dados financeiros isolados em ambiente dedicado</li>
+                <li>Separação lógica entre produção e desenvolvimento</li>
+                <li>Acesso restrito por princípio de menor privilégio</li>
+            </ul>
+
+            <h2>3. Segurança de Transações</h2>
+            
+            <h3>3.1 Processamento de Pagamentos</h3>
+            <ul>
+                <li>Conformidade com PCI DSS (Payment Card Industry Data Security Standard)</li>
+                <li>Validação dupla de dados antes do processamento</li>
+                <li>Confirmação obrigatória do usuário</li>
+                <li>Logs auditáveis de todas as transações</li>
+                <li>Detecção automática de padrões suspeitos</li>
+            </ul>
+
+            <h3>3.2 Prevenção de Fraudes</h3>
+            <ul>
+                <li>Análise de comportamento em tempo real</li>
+                <li>Sistema de scoring de risco</li>
+                <li>Limites transacionais configuráveis</li>
+                <li>Bloqueio automático de atividades suspeitas</li>
+                <li>Verificação de dispositivos e localização</li>
+            </ul>
+
+            <h3>3.3 OCR Seguro</h3>
+            <ul>
+                <li>Processamento de imagens em ambiente isolado</li>
+                <li>Deleção automática de imagens após 90 dias</li>
+                <li>Sem armazenamento de dados sensíveis nas imagens</li>
+                <li>Validação cruzada de dados extraídos</li>
+            </ul>
+
+            <h2>4. Controle de Acesso</h2>
+            
+            <h3>4.1 Autenticação</h3>
+            <ul>
+                <li>Autenticação multifator (2FA) disponível</li>
+                <li>Verificação via código SMS/WhatsApp</li>
+                <li>Detecção de tentativas de acesso suspeitas</li>
+                <li>Bloqueio temporário após 5 tentativas falhas</li>
+                <li>Notificação de novos dispositivos</li>
+            </ul>
+
+            <h3>4.2 Sessões</h3>
+            <ul>
+                <li>Tempo máximo de sessão: 30 minutos de inatividade</li>
+                <li>Logout automático em caso de inatividade</li>
+                <li>Token único por dispositivo</li>
+                <li>Invalidação de sessões antigas ao fazer novo login</li>
+            </ul>
+
+            <h2>5. Segurança de Infraestrutura</h2>
+            
+            <h3>5.1 Proteção de Rede</h3>
+            <ul>
+                <li>Firewall de aplicação web (WAF)</li>
+                <li>Proteção DDoS via Cloudflare</li>
+                <li>Monitoramento 24/7 de tráfego</li>
+                <li>IDS/IPS (Sistema de Detecção/Prevenção de Intrusão)</li>
+            </ul>
+
+            <h3>5.2 Servidores</h3>
+            <ul>
+                <li>Sistemas operacionais atualizados semanalmente</li>
+                <li>Patches de segurança aplicados em até 48h</li>
+                <li>Antivírus e antimalware em todas as camadas</li>
+                <li>Hardening conforme CIS Benchmarks</li>
+            </ul>
+
+            <h3>5.3 Aplicação</h3>
+            <ul>
+                <li>Code review de segurança em todas as releases</li>
+                <li>Testes de penetração semestrais</li>
+                <li>Análise estática de código (SAST)</li>
+                <li>Análise dinâmica de segurança (DAST)</li>
+                <li>Scanning de dependências vulneráveis</li>
+            </ul>
+
+            <h2>6. Monitoramento e Resposta</h2>
+            
+            <h3>6.1 Monitoramento Contínuo</h3>
+            <ul>
+                <li>SOC (Security Operations Center) 24/7</li>
+                <li>Alertas automáticos de eventos suspeitos</li>
+                <li>Correlação de logs e eventos</li>
+                <li>Métricas de segurança em tempo real</li>
+            </ul>
+
+            <h3>6.2 Plano de Resposta a Incidentes</h3>
+            <ul>
+                <li>Equipe de resposta disponível 24/7</li>
+                <li>Protocolo de contenção em até 2 horas</li>
+                <li>Investigação e remediação documentada</li>
+                <li>Comunicação com afetados em até 72 horas (conforme LGPD)</li>
+                <li>Análise pós-incidente e melhorias</li>
+            </ul>
+
+            <h2>7. Segurança do WhatsApp</h2>
+            
+            <h3>7.1 Integração Oficial</h3>
+            <ul>
+                <li>Uso da API oficial do WhatsApp Business</li>
+                <li>Criptografia end-to-end mantida</li>
+                <li>Conformidade com políticas do WhatsApp</li>
+                <li>Verificação de remetente</li>
+            </ul>
+
+            <div class="alert-box">
+                <h3 style="color: #FF5252; margin-bottom: 0.5rem;">⚠️ Importante: Nunca compartilhe</h3>
+                <ul style="margin: 0;">
+                    <li>Não solicitamos senhas por WhatsApp</li>
+                    <li>Confirmações importantes requerem código de verificação</li>
+                    <li>Desconfie de mensagens suspeitas</li>
+                    <li>Sempre verifique se está falando com nosso número oficial</li>
+                </ul>
+            </div>
+
+            <h2>8. Responsabilidades do Usuário</h2>
+            
+            <h3>8.1 Você deve:</h3>
+            <ul>
+                <li>Manter seu telefone e WhatsApp seguros</li>
+                <li>Usar senhas fortes e únicas</li>
+                <li>Ativar autenticação de dois fatores</li>
+                <li>Não compartilhar credenciais</li>
+                <li>Reportar atividades suspeitas imediatamente</li>
+                <li>Manter aplicativos atualizados</li>
+            </ul>
+
+            <h3>8.2 Sinais de Alerta - Desconfie e reporte:</h3>
+            <ul>
+                <li>Solicitações de senha fora do app</li>
+                <li>Links suspeitos recebidos</li>
+                <li>Confirmações de transações não realizadas</li>
+                <li>Acessos de dispositivos desconhecidos</li>
+            </ul>
+
+            <h2>9. Vulnerabilidades e Bug Bounty</h2>
+            
+            <h3>9.1 Programa de Recompensas</h3>
+            <p>Identificou uma vulnerabilidade? Entre em contato:</p>
+            <div class="contact-box">
+                <p><strong>E-mail:</strong> up.transparency@gmail.com</p>
+                <p>• Resposta inicial em até 48 horas</p>
+                <p>• Recompensas para vulnerabilidades críticas</p>
+                <p>• Reconhecimento público (com sua autorização)</p>
+            </div>
+
+            <h3>9.2 Divulgação Responsável</h3>
+            <p>Pedimos que:</p>
+            <ul>
+                <li>Não explore a vulnerabilidade</li>
+                <li>Mantenha confidencialidade por 90 dias</li>
+                <li>Forneça detalhes para reprodução</li>
+                <li>Nos dê tempo para correção</li>
+            </ul>
+
+            <h2>10. Certificações e Conformidade</h2>
+            
+            <h3>10.1 Normas Seguidas</h3>
+            <ul>
+                <li>LGPD (Lei 13.709/2018)</li>
+                <li>Marco Civil da Internet (Lei 12.965/2014)</li>
+                <li>Resolução BCB nº 4.893/2021 (Open Banking)</li>
+                <li>ISO 27001 (em processo de certificação)</li>
+            </ul>
+
+            <h2>11. Reporte de Incidentes</h2>
+            <p>Suspeita de fraude ou problema de segurança?</p>
+            
+            <div class="contact-box" style="background: #FFE5E5; border-left-color: #FF5252;">
+                <p><strong>Contato Imediato (24/7):</strong></p>
+                <p>📧 E-mail: up.transparency@gmail.com</p>
+                <p>📱 WhatsApp: +55 11 99651-3891</p>
+                <p style="margin-top: 1rem;"><strong>Informações úteis para reportar:</strong></p>
+                <p>• Data e hora do ocorrido</p>
+                <p>• Descrição detalhada</p>
+                <p>• Capturas de tela (sem dados sensíveis)</p>
+                <p>• Número da transação (se aplicável)</p>
+            </div>
+
+            <h2>12. Contato</h2>
+            <div class="contact-box" style="background: var(--verde-principal); color: var(--branco); border: none;">
+                <p><strong>FaciliteOnline - Equipe de Segurança</strong></p>
+                <p>CNPJ: 55.130.600/0001-66</p>
+                <p>E-mail: up.transparency@gmail.com</p>
+                <p>WhatsApp: +55 11 99651-3891</p>
+            </div>
+
+            <div class="security-badge" style="margin-top: 3rem;">
+                <p style="font-size: 1.2rem; margin: 0;">
+                    <strong>Sua segurança é nossa prioridade. Trabalhamos 24/7 para proteger suas informações e transações.</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FaciliteOnline. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
